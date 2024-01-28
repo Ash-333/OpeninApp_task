@@ -24,17 +24,20 @@ const Auth = () => {
   }
 
   return (
-    <div className="h-screen md:flex bg-[#605BFF] md:bg-[#F8FAFF]">
+    <div className="md:h-screen md:flex md:bg-[#F8FAFF]">
       <div className="w-screen md:w-1/2">
-        <div className="md:absolute top-8 left-10  ">
-          <img className="w-16" src={logo} alt="" />
-          <img className="absolute top-5 w-16" src={patt} alt="" />
+        <img className="md:block object-cover h-12 w-full md:w-full md:h-auto" src={authBG} alt="" />
+        <div className="flex m-2">
+          <div className="absolute md:top-8 md:left-10 top-1">
+            <img className="md:w-16 w-8" src={logo} alt="" />
+            <img className="absolute md:top-5 md:w-16 w-8 top-3" src={patt} alt="" />
+          </div>
+          <h1 className="absolute font-semibold md:left-40 md:bottom-56 md:top-44 text-xl md:text-6xl top-2 text-white left-12">
+            BASE
+          </h1>
         </div>
-        <h1 className=" md:absolute text-center font-semibold md:left-40 bottom-56 text-3xl md:text-6xl text-white">
-          BASE
-        </h1>
-        <img className="md:absolute bottom-8 left-28 w-44" src={socials} alt="" />
-        <img className="hidden md:block object-cover" src={authBG} alt="" />
+        
+        <img className="absolute bottom-8 md:left-28 left-16 w-44 bg-blue-300" src={socials} alt="" />
       </div>
 
       <div className="ml-0 md:ml-10 md:w-1/2 p-4 md:p-0">

@@ -72,7 +72,7 @@ const Upload = () => {
         </div>
       </div>
 
-      <div className=" w-1/2 h-[315px] mx-auto p-4 mt-20 bg-white rounded-md">
+      <div className="w-4/5 md:w-1/2 h-[315px] mx-auto p-4 mt-20 bg-white rounded-md">
         <div
           className="border-dashed border-2  text-center h-[240px] rounded-md"
           onDragOver={preventDefaultAndStopPropagation}
@@ -115,7 +115,7 @@ const Upload = () => {
           onClick={addToStore}
           disabled={csv}
         >
-          {csvFile?<img src={loading}/>:<><img className="mr-1" src={upload} alt="" /></>}
+          {csvFile?<img className='animate-spin' src={loading}/>:<><img className="mr-1" src={upload} alt="" /> Upload</>}
         </button>
       </div>
       <p className="text-red-700 font-bold">{error}</p>
