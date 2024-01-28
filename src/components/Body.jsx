@@ -1,6 +1,5 @@
 import React from 'react'
 import Auth from './Auth'
-
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import DashBoard from './DashBoard'
 
